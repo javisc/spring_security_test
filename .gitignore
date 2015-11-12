@@ -1,0 +1,17 @@
+.gradle
+build/
+**/gradle/wrapper
+**/gradlew
+**/gradlew.bat
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Eclipse
+.settings
+.project
+.classpath
+.editorconfig
+bin/
