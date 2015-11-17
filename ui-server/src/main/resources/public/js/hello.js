@@ -15,7 +15,7 @@ angular
 
 				}).controller('home', function($scope, $http) {
 					$http.get('token').success(function(token) {
-					    $http.get('http://localhost:9000/resource',{headers : {'X-Auth-Token' : token.token}})
+					    $http.get('resource/',{headers : {'X-Auth-Token' : token.token}})
 					      .success(function(data) {
 					    	  $scope.greeting = data;
 					    });
